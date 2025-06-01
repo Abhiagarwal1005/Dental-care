@@ -1,6 +1,7 @@
 import './mobileNav.css'
 import logo from '../../assets/logo.png';
 
+//@ts-ignore
 const MobileNavbar = ({ isOpen, toggleMenu }) => {
 
     return (
