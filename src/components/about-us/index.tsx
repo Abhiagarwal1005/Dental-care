@@ -21,9 +21,9 @@ const AboutUs = () => {
                     <div className="w-full lg:order-2 order-1 flex-col justify-center lg:items-start items-center gap-10 inline-flex">
                         <div className="w-full flex-col justify-center items-start gap-5 flex">
                             <div className="flex-col justify-start lg:items-start items-center gap-2 flex">
-                                <h6 className="text-textSecondary font-normal text-xl leading-relaxed flex items-center gap-1"> <FaTooth />About Us</h6>
+                                <h6 className="text-primary font-normal text-xl leading-relaxed flex items-center gap-1"> <FaTooth />About Us</h6>
                                 <div className="w-full flex-col justify-start lg:items-start items-center gap-2 flex">
-                                    <h2 className="text-textPrimary text-4xl font-bold leading-tight lg:text-start text-center">
+                                    <h2 className="text-textPrimary text-4xl sm:text-5xl font-bold leading-tight lg:text-start text-center">
                                         The Tale of Our Achievement Story
                                     </h2>
                                     <p className="text-textSecondary text-base font-normal leading-relaxed lg:text-start text-center">
