@@ -1,5 +1,4 @@
 import { FaTooth } from "react-icons/fa6";
-import { NumberTicker } from "../ui/NumberTicker";
 import FigureCard from "./figure-card";
 
 const ClinicFigures = () => {
@@ -17,11 +16,6 @@ const ClinicFigures = () => {
                 <FigureCard />
                 <FigureCard />
             </div>
-
-            {/* <NumberTicker
-                value={100}
-                className="text-primary text-4xl"
-            /> */}
         </div>
     )
 };
