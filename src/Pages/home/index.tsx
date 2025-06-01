@@ -1,0 +1,32 @@
+import { FaTooth } from "react-icons/fa6";
+import AboutUs from "../../components/about-us";
+import Card from "../../components/card";
+import HeroSection from "../../components/hero-section";
+import Marquee from "../../components/marquee";
+
+const HomePage = () => {
+    return (
+        <div>
+            <HeroSection />
+            <Marquee />
+            <AboutUs />
+            <div className="bg-[#f5f5f5]">
+                <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-1 py-12 sm:py-16">
+                    <h6 className="text-textSecondary text-center font-normal text-xl leading-relaxed flex items-center justify-center gap-1"> <FaTooth />About Us</h6>
+                    <h2 className="text-textPrimary text-4xl font-bold leading-tight text-center">The Tale of Our Achievement Story</h2>
+                    <p className="text-textSecondary text-base font-normal leading-relaxed text-center">
+                        Our achievement story is a testament to teamwork and perseverance.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-5">
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+};
+
+export default HomePage;
