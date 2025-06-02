@@ -50,7 +50,7 @@ const Testimonials = () => {
             </p>
 
             <div className="mt-8 md:mt-12">
-                <AnimatedTestimonials testimonials={testimonials} />;
+                <AnimatedTestimonials testimonials={testimonials} />
             </div>
         </div>
     )
