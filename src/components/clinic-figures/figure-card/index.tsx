@@ -4,7 +4,7 @@ import { BorderBeam } from "../../ui/BorderBeam";
 
 const FigureCard = () => {
     return (
-        <div className="bg-white shadow-md rounded-lg p-6 py-10 flex flex-col items-center w-full gap-1.5 relative overflow-hidden">
+        <div className="bg-white shadow-lg rounded-lg p-6 py-10 flex flex-col items-center w-full gap-1.5 relative overflow-hidden">
             <IoLocationOutline size={50} color="#DFC57B" />
             <NumberTicker
                 value={100}

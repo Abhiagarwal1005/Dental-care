@@ -23,7 +23,7 @@ const AboutUs = () => {
                             <div className="flex-col justify-start lg:items-start items-center gap-2 flex">
                                 <h6 className="text-primary font-normal text-xl leading-relaxed flex items-center gap-1"> <FaTooth />About Us</h6>
                                 <div className="w-full flex-col justify-start lg:items-start items-center gap-2 flex">
-                                    <h2 className="text-textPrimary text-4xl sm:text-5xl font-bold leading-tight lg:text-start text-center">
+                                    <h2 className="text-textPrimary text-4xl sm:text-5xl font-bold leading-tight lg:text-start text-center my-1">
                                         The Tale of Our Achievement Story
                                     </h2>
                                     <p className="text-textSecondary text-base font-normal leading-relaxed lg:text-start text-center">
