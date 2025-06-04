@@ -3,9 +3,9 @@ import AboutUs from "../../components/about-us";
 import Card from "../../components/card";
 import HeroSection from "../../components/hero-section";
 import Marquee from "../../components/marquee";
-import ClinicFigures from "../../components/clinic-figures";
 import WhyChooseUs from "../../components/why-choose-us";
 import Testimonials from "../../components/testimonials";
+import GetInTouch from "../../components/get-in-touch";
 
 const HomePage = () => {
     return (
@@ -32,9 +32,9 @@ const HomePage = () => {
                 </div>
             </div>
             <WhyChooseUs />
-            <ClinicFigures />
+            <Testimonials />
             <div className="bg-[#f5f5f5]">
-                <Testimonials />
+                <GetInTouch />
             </div>
         </div>
     )

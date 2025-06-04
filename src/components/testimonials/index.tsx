@@ -1,59 +1,45 @@
 import { FaTooth } from "react-icons/fa6";
-import { AnimatedTestimonials } from "../ui/animated-testimonials";
+import TestimonialCard from "./testimonial-card";
 
 const Testimonials = () => {
 
-    const testimonials = [
-    {
-      quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-  ];
+  return (
+    <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-1 py-12 sm:py-16">
+      <h6 className="text-primary text-center font-normal text-xl leading-relaxed flex items-center justify-center gap-1"> <FaTooth />Testimonials</h6>
+      <h2 className="text-textPrimary text-4xl sm:text-5xl font-bold leading-tight text-center">What Have We Achieved</h2>
+      <p className="text-textSecondary text-base font-normal leading-relaxed text-center">
+        Our achievement story is a testament to teamwork and perseverance.
+      </p>
 
-    return (
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-1 py-12 sm:py-16">
-            <h6 className="text-primary text-center font-normal text-xl leading-relaxed flex items-center justify-center gap-1"> <FaTooth />Testimonials</h6>
-            <h2 className="text-textPrimary text-4xl sm:text-5xl font-bold leading-tight text-center">What Have We Achieved</h2>
-            <p className="text-textSecondary text-base font-normal leading-relaxed text-center">
-                Our achievement story is a testament to teamwork and perseverance.
-            </p>
+      <div className="mt-8 md:mt-12">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
 
-            <div className="mt-8 md:mt-12">
-                <AnimatedTestimonials testimonials={testimonials} />
-            </div>
+          <ul className="space-y-5">
+            <li>
+              <TestimonialCard text='Diam quis enim lobortis scelerisque
+                                    fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis
+                                    aliquam malesuada bibendum.'/>
+            </li>
+            <TestimonialCard text='Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Donec pretium' />
+          </ul>
+          <ul  className="space-y-5">
+            <li>
+              <TestimonialCard text='Diam quis enim lobortis scelerisque' />
+            </li>
+            <li>
+              <TestimonialCard text='Diam quis enim lobortis scelerisque' />
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <TestimonialCard text='Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Donec pretium
+                                    vulputate sapien nec sagittis aliquam malesuada bibendum.'/>
+            </li>
+          </ul>
         </div>
-    )
+      </div>
+    </div>
+  )
 };
 
 export default Testimonials;

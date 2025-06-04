@@ -14,7 +14,7 @@ const HeroSection = () => {
                             </h1>
                             <p className="mt-2 text-lg text-textSecondary sm:mt-4 font-inter">At <b className='text-primary'>32 Dant Chikitsa</b>, we specialize in delivering top-tier dental care and advanced aesthetic treatments. Led by Dr. [Name] and Dr. [Name], our Gurgaon-based clinic offers a modern, patient-centric approach to oral wellness and facial aesthetics, ensuring personalized care and exceptional results.</p>
                             <div className="relative">
-                                <button type="submit" className="inline-flex px-6 py-3 mt-5 text-lg font-bold text-white transition-all duration-200 bg-primary rounded-lg hover:bg-hoverColor">Book Appointment</button>
+                                <div className="inline-flex px-6 py-3 mt-5 text-lg font-bold text-white transition-all duration-200 bg-primary rounded-lg hover:bg-hoverColor">Book Appointment</div>
                             </div>
                         </div>
                         <div>
