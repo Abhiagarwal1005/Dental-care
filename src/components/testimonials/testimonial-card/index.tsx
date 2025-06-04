@@ -1,3 +1,4 @@
+// @ts-ignore
 const TestimonialCard = ({text}) => {
     return (
         <div className="relative group">
