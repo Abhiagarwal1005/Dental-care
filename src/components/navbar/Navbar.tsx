@@ -4,6 +4,7 @@ import { IoMenu } from "react-icons/io5";
 import { useState } from 'react';
 import { IoClose } from "react-icons/io5";
 import MobileNavbar from '../mobile-navbar/MobileNavbar';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -24,19 +25,19 @@ const Navbar = () => {
                     <img src={logo} className='logo cursor-pointer' alt="" />
                     <ul>
                         <li>
-                            <a className='menu-item' href="#home">Home</a>
+                            <Link className='menu-item' to="/">Home</Link>
                         </li>
                         <li>
-                            <a className='menu-item' href="#about">About</a>
+                            <Link className='menu-item' to="/about">About</Link>
                         </li>
                         <li>
-                            <a className='menu-item' href="#services">Services</a>
+                            <Link className='menu-item' to="/services">Services</Link>
                         </li>
                         <li>
-                            <a className='menu-item' href="#FAQ">Gallery</a>
+                            <Link className='menu-item' to="/gallery">Gallery</Link>
                         </li>
                         <li>
-                            <a className='menu-item' href="#Contact">Contact</a>
+                            <Link className='menu-item' to="/contact">Contact</Link>
                         </li>
                     </ul>
 
