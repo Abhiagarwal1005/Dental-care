@@ -1,5 +1,6 @@
 import './mobileNav.css'
 import logo from '../../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 //@ts-ignore
 const MobileNavbar = ({ isOpen, toggleMenu }) => {
@@ -11,18 +12,20 @@ const MobileNavbar = ({ isOpen, toggleMenu }) => {
                     <img src={logo} className='logo' alt="" />
                     <ul>
                         <li>
-                            <a className='menu-item' href="#home">Home</a>
+                            <Link className='menu-item' to="/">Home</Link>
                         </li>
                         <li>
-                            <a className='menu-item' href="#about">About</a>
+                            <Link className='menu-item' to="/about">About</Link>
                         </li>
                         <li>
-                            <a className='menu-item' href="#services">Service</a>
+                            <Link className='menu-item' to="/services">Services</Link>
                         </li>
                         <li>
-                            <a className='menu-item' href="#FAQ">FAQ's</a>
+                            <Link className='menu-item' to="/gallery">Gallery</Link>
                         </li>
-                        <a className='contact-btn' >Contact Us</a>
+                        <li>
+                            <Link className='menu-item' to="/contact">Contact</Link>
+                        </li>
                     </ul>
                 </div>
             </div>
