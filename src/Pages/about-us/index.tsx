@@ -1,9 +1,16 @@
-const About = () =>{
+import AboutUs from "../../components/about-us";
+import WhyChooseUs from "../../components/why-choose-us";
+import BreadcrumbBanner from "../../components/breadcrumb-banner";
+
+const About = () => {
     return (
-        <div>
-        <h1>About Page</h1>
-        <p>Welcome to the about page. Here you can find information about our mission, vision, and team.</p>
-        </div>
+        <>
+            <BreadcrumbBanner title="About Us"/>
+            <AboutUs />
+            <div className="mb-12">
+                <WhyChooseUs />
+            </div>
+        </>
     );
 }
 
